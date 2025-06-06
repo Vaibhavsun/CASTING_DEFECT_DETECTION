@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tf.keras.models import load_model
+from tensorflow.keras.models import load_model
 import streamlit as st
 
 @st.cache_resource

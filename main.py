@@ -9,7 +9,7 @@ if casting_image is not None:
     st.write("Image uploaded successfully!")
     with open('casting_image.jpg', 'wb') as f:
         f.write(casting_image.getbuffer())
-    st.write("Label":prediction("casting_image.jpg"))
+    st.write("Label:",prediction("casting_image.jpg"))
 
     
 

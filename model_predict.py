@@ -22,7 +22,7 @@ def prediction(path):
     model=model_loading()
     img=tf.expand_dims(img,axis=0)
     pred=model(img)
-    print(pred[0][0])
+    print("Logger Prediction",pred)
     if float(pred[0][0])<=0.5:
         return "DEFECT"
     else:
